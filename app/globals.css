@@ -1,132 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import "tailwindcss";
 
 :root {
-    --black: #0F002E;
-    --gray: #363945;
-    --white: #F8F8FF;
-    --blue: #03DFFC;
-    --purple: #8C00FF;
-    --pink: #ED40BC;
-    --green: #00FF00;
-    --yellow: #FFDD00;
-    --red: #FF0000;
-    --orange: #FF9500;
-}
+  --body: #FCFDFF;
+  --content: #E9F7DE;
+  --heading: #418D26;
+  --subheading: #4483C6;
+  --interact: #D3422E;
+  --highlight: #F5BB12;
+  --text: #1A1A1A;
+  --nav-button-text: #FCFDFF;
+  --nav-button-active: #F5BB12;
+  --nav-text-active: #1A1A1A;
 
-@theme inline {
-    --color-black: var(--black);
-    --color-gray: var(--gray);
-    --color-white: var(--white);
-    --color-blue: var(--blue);
-    --color-purple: var(--purple);
-    --color-pink: var(--pink);
-    --color-green: var(--green);
-    --color-yellow: var(--yellow);
-    --color-red: var(--red);
-    --color-orange: var(--orange);
-    --font-digitalDisco: "DigitalDisco";
-    --font-digitalDisco-thin: "DigitalDisco thin";
-    --font-dogica: "dogica";
-    --font-dogica-bold: "dogica bold";
-    --font-dogicaPixel: "Dogica Pixel";
-    --font-dogicaPixel-bold: "Dogica Pixel bold";
-    --font-emojiFont: "EmojiFont";
-    --font-karma-future: "Karma future";
-    --font-karma-suture: "Karma suture";
-    --font-vcrosd: "VCR OSD Mono";
+  --font-nunito: "Nunito", sans-serif;
+  --font-modak: "Modak", system-ui;
+  --font-raleway: "Raleway", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --body: #121314;
+    --content: #2E3B27;
+    --heading: #A9DD88;
+    --subheading: #88C9FF;
+    --highlight: #FFD84D;
+    --text: #F5F5F5;
   }
 }
 
-@font-face {
-    font-family: "DigitalDisco monospace medium";
-    font-style: medium;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/DigitalDisco.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "DigitalDisco monospace thin";
-    font-style: thin;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/DigitalDisco-Thin.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "dogica monospace regular";
-    font-style: regular;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/dogica.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "dogica monospace bold";
-    font-style: bold;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/dogicabold.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Dogica Pixel monospace regular";
-    font-style: regular;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/dogicapixel.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Dogica Pixel monospace bold";
-    font-style: bold;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/dogicapixelbold.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "EmojiFont monospace regular";
-    font-style: regular;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/EmojiFont.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Karma monospace future";
-    font-style: future;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/Karma Future.otf") format("otf");
-}
-
-@font-face {
-    font-family: "Karma monospace suture";
-    font-style: suture;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/Karma Suture.otf") format("otf");
-}
-
-@font-face {
-    font-family: "VCR OSD Mono monospace regular";
-    font-style: regular;
-    font-weight: 200 700;
-    font-display: swap;
-    src: url("/fonts/VCR_OSD_MONO_1.001.ttf") format("ttf");
-}
-
 body {
-    background-color: var(--black);
+    background-color: var(--body);
+}
+
+.content {
+    background-color: var(--content);
+    max-width: 80%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+h1.branding {
+    display: flex;
+    color: var(--text);
+    font-family: "Modak", cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 1rem 0 1rem;
+}
+
+.heading {
+    color: var(--heading);
+    font: var(--font-raleway);
+    font-weight: 700;
+    font-size: 32;
+}
+
+.subheading {
+    color: var(--subheading);
+    font: var(--font-raleway);
+    font-weight: 700;
+    font-size: 28;
+}
+
+h2.subheading {
+    font-size: 28;
+}
+
+h3.subheading {
+    font-size: 24;
+}
+
+h4.subheading {
+    font-size: 22;
+}
+
+h5.subheading {
+    font-size: 18;
+}
+
+.interact {
+    background-color: var(--interact);
+    color: var(--text);
+    font: var(--font-nunito);
+    font-weight: 400;
+    font-size: 14;
+}
+
+.highlight {
+    color: var(--highlight);
+    font: var(--font-nunito);
+    font-weight: 400;
+    font-size: 14;
+    font-style: italic;
+}
+
+em {
+    background-color: var(--highlight);
+    color: var(--nav-text-active);
+    font-style: italic;
+    font-weight: 700;
+    padding: 0 0.25rem 0 0.25rem;
+}
+
+.text {
+    color: var(--text);
+    font: var(--font-nunito);
+    font-weight: 400;
+    font-size: 14;
 }
 
 main {
     margin: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.75rem;
+    margin: 0.75rem;
+}
+
+.nav-button-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.nav-button {
+    padding: 1rem;
+    background-color: var(--interact);
+    color: var(--nav-button-text);
+    border-radius: 0.5rem;
+    font: var(--font-nunito);
+    font-weight: 400;
+    font-size: 18;
+}
+
+.nav-button-active {
+    background-color: var(--nav-button-active);
+    color: var(--nav-text-active);
+}
+
+.nav-button:hover {
+    scale: 110%;
+}
+
+.title {
+    font-family: "Modak", cursive;
+    font-size: 64;
+    color: var(--heading);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.subtitle {
+    font: var(--font-raleway);
+    font-size: 36;
+    font-weight: 700;
+    color: var(--subheading);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.gif {
+    display: flex;
+    margin: auto;
+    padding: 2rem;
 }
