@@ -175,3 +175,11 @@ main {
     margin: auto;
     padding: 2rem;
 }
+
+.my-avatar {
+    display: flex;
+    margin: auto;
+    min-width: 20rem;
+    min-height: 20rem;
+    image-rendering: pixelated;
+}

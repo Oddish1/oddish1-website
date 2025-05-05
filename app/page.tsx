@@ -8,7 +8,7 @@ export default function Home() {
 		<main className="content">
 		    <h1 className="title">The Oddish Arcanum</h1>
 		    <h2 className="subtitle">my personal grimoire</h2>
-		    <img className="gif" src="/images/dancing-bmo.gif" alt="Dancing BMO" />
+		    <img className="my-avatar" src="/images/oddish1-avatar.png" alt="Oddish1 Avatar" />
 		    <br />
 		    <p className="text text-center">
 			Feel free to look around! The site is a work in progress though ... so be warned!
