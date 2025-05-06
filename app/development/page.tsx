@@ -7,7 +7,7 @@ export default function Development() {
             <Header />
             <main className="content">
                     <h1 className="title">What's In Development?</h1>
-                    <img className="gif" src="/images/dancing-bmo.gif" alt="Nothing to see here but hot singles in my area meme from Schitt's Creek"></img>
+                    <img className="gif" src="/images/dancing-bmo.gif" alt="Dancing BMO gif."></img>
                     <p className="text blurb">
                         Wow, look at that! Another empty page!
                     </p>
