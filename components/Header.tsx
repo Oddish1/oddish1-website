@@ -15,6 +15,7 @@ export default function Header() {
 		<NavLink href="/blog" label="blog" pathname={pathname} />
 		<NavLink href="/gallery" label="gallery" pathname={pathname} />
 		<NavLink href="/development" label="development" pathname={pathname} />
+		<NavLink href="/inspiration" label="inspiration" pathname={pathname} />
 	    </nav>
 	</header>
     );
