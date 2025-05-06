@@ -7,9 +7,9 @@ export default function About() {
 	    <Header />
 	    <main className="content rounded-xl">
 		<div className="p-4 m-4">
-		    <h1 className="heading text-4xl">About Me and This Site</h1>
+		    <h1 className="title">About Me and This Site</h1>
 		    <div className="p-4">
-			<h2 className="subheading text-3xl">Who is Oddish1?</h2>
+			<h2 className="heading text-3xl">Who is Oddish1?</h2>
 			<p className="text py-2">
 			I am a freshly-graduated computer science student! I'm currently looking for jobs, but am definitely enjoying being out of school with free time to devote to projects like this one!
 			</p>
@@ -85,7 +85,7 @@ export default function About() {
 			  <li>* Stardew Valley (2016)</li>
 			</ul>
 
-			<h2 className="subheading">What is This Place?</h2>
+			<h2 className="heading">What is This Place?</h2>
 			<p className="text py-2">
 			  This site acts as a place for me to put whatever I want on the internet! (ᵔᴥᵔ) I have always admired websites of old with simple html/css and maybe a slight amount of php or javascript to add light functionality. That is the web that I grew up on. Then social media came around and everyone stopped making websites. Fastforward to about a year ago, and I started to realize that some people still did make their own websites. I learned about the indie web or small web or whatever people want to call it. So I decided to completely forgo social media (except youtube for now) in favor of just posting things on my own site.
 			</p>
