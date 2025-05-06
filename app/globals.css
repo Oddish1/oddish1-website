@@ -180,6 +180,7 @@ main {
     display: flex;
     margin: auto;
     padding: 2rem;
+    min-width: 24rem;
 }
 
 .my-avatar {
