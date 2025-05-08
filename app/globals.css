@@ -3,13 +3,7 @@
 @import "tailwindcss";
 
 :root {
-  --body: #FCFDFF;
-  --content: #E9F7DE;
-  --heading: #418D26;
-  --subheading: #4483C6;
   --interact: #D3422E;
-  --highlight: #F5BB12;
-  --text: #1A1A1A;
   --nav-button-text: #FCFDFF;
   --nav-button-active: #F5BB12;
   --nav-text-active: #1A1A1A;
@@ -27,7 +21,20 @@
     --subheading: #88C9FF;
     --highlight: #FFD84D;
     --text: #F5F5F5;
+    --card-bg: #424E3C;
   }
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --body: #FCFDFF;
+        --content: #E9F7DE;
+        --heading: #418D26;
+        --subheading: #4483C6;
+        --highlight: #F5BB12;
+        --text: #1A1A1A;
+        --card-bg: #D1DEC7;
+    }
 }
 
 body {
@@ -189,4 +196,17 @@ main {
     min-width: 20rem;
     min-height: 20rem;
     image-rendering: pixelated;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--card-hl);
+    text-align: center;
+}
+
+.card:hover {
+    scale: 105%;
+    box-shadow: var(--card-hl-hover);
 }
