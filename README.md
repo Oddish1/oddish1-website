@@ -1,3 +1,3 @@
-# oddish1.com
+# Oddish1.com
 
-I want to move past the static pages of my current website and learn how I can build web-apps with javascript. So, I decided to redo my website in javascript and add on a bunch of other features.
+This is a rebuild of my website that I am doing using node, nextjs, react, and tailwind. I wanted to make my site more responsive and figured that it would be a good excuse to use typescript and learn these frameworks.
