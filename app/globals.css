@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 @import "tailwindcss";
-
-:root {
-  
-  --font-nunito: "Nunito", sans-serif;
-  --font-modak: "Modak", system-ui;
-  --font-raleway: "Raleway", sans-serif;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -58,7 +51,7 @@ body {
 h1.branding {
     display: flex;
     color: var(--text);
-    font-family: "Modak", cursive;
+    font-family: var(--font-cherry-bomb);
     font-size: 5rem;
     font-weight: 400;
     font-style: normal;
@@ -168,7 +161,9 @@ main {
 }
 
 .title {
-    font-family: "Modak", cursive;
+    font-family: var(--font-cherry-bomb);
+    font-weight: 400;
+    font-style: normal;
     font-size: 64;
     color: var(--heading);
     text-align: center;

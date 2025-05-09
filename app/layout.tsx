@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito, Raleway, Cherry_Bomb_One } from 'next/font/google';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,15 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const nunito = Nunito({ subsets: ['latin'], variable: '--font-nunito' });
+const raleway = Raleway({ subsets: ['latin'], variable: '--font-raleway' });
+const cherry = Cherry_Bomb_One({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-cherry-bomb',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.variable} ${raleway.variable} ${cherry.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
