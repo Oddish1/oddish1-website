@@ -16,7 +16,7 @@ export default function Project({ item }: { item: { name: string, site:string, d
 		<h5 className={`font-bold ${statusClass}`}>{item.status.name.toUpperCase()} - {item.status.progress}%</h5>
 	    </div>
 	    <div className="project-content">
-		<img src={`/previews/${item.name.toLowerCase().replace(/\s/g, "")}.png`} alt={`${item.displayName} preview`} className="m-auto" />
+		<img src={`/previews/${item.name.toLowerCase().replace(/\s/g, "")}.webp`} alt={`${item.displayName} preview`} className="m-auto" />
 		<p className="text mt-2 max-2-[300px]">{item.description}</p>
 	    </div>
 	</a>
