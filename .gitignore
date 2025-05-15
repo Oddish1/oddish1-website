@@ -9,3 +9,6 @@ client/.env
 server/node_modules
 server/tsconfig.json
 server/.env
+server/src/generated
+
+*.sql

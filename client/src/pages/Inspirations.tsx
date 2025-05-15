@@ -25,7 +25,7 @@ export default function Inspirations() {
                         LOL, Feeling inspired yet?
                     </p>
                     <br />
-                    <div className="flex flex-wrap gap-16 m-8 justify-center">
+                    <div className="inspirations-container">
                         {inspirations.map((inspiration) => (
                             <Interest key={inspiration.id} item={inspiration} />
                         ))}

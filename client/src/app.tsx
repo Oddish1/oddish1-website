@@ -11,6 +11,7 @@ import Blog from './pages/Blog';
 import Gallery from './pages/Gallery';
 import Development from './pages/Development';
 import Inspirations from './pages/Inspirations';
+import NewInspiration from './pages/inspirations/new';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
 		    <Route path="/gallery" element={<Gallery />} />
 		    <Route path="/development" element={<Development />} />
 		    <Route path="/inspirations" element={<Inspirations />} />
+		    <Route path="/inspirations/new" element={<NewInspiration />} />
 		</Routes>
 	    <Footer />
 	</>

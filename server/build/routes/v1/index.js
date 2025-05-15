@@ -1,15 +1,9 @@
 import express from 'express';
 // import all routes for v1 api here
-import inspirationsRouter from './inspirations.ts';
-
 const router = express.Router();
-
 // router.use('/subroute', rootImport);
-router.use('/', inspirationsRouter);
-
-// define GET for api home route '/api/v1/'
-router.get('/', (req: express.Request, res: express.Response) => {
+// define GET for homepage route '/'
+router.get('/', (req, res) => {
     res.send('You\'re at the index!');
 });
-
 export default router;
