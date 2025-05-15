@@ -12,6 +12,7 @@ import Gallery from './pages/Gallery';
 import Development from './pages/Development';
 import Inspirations from './pages/Inspirations';
 import NewInspiration from './pages/inspirations/new';
+import NewProject from './pages/development/new';
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
 		    <Route path="/development" element={<Development />} />
 		    <Route path="/inspirations" element={<Inspirations />} />
 		    <Route path="/inspirations/new" element={<NewInspiration />} />
+		    <Route path="/development/new" element={<NewProject />} />
 		</Routes>
 	    <Footer />
 	</>

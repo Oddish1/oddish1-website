@@ -1,19 +1,25 @@
+'use client'
+import PlanningIcon from '../assets/images/MdiPlaylistEdit.svg?react';
+import ProgressIcon from '../assets/images/MdiPlay.svg?react';
+import FinishedIcon from '../assets/images/MdiCheckBold.svg?react';
+import PauseIcon from '../assets/images/MdiPause.svg?react';
+
 export default function Project({ item }: { item: { name: string, site:string, description: string, displayName: string, status: { name: string, progress: number } } }) {
 
-    const statusColorMap: { [key: string]: string } = {
-	"planning": "text-yellow-400",
-	"in progress": "text-blue-400",
-	"finished": "text-green-400",
-	"on pause": "text-gray-400",
-    };
+    const statusSVGMap: { [key: string]: React.JSX.Element } = {
+	"planning": <PlanningIcon />,
+	"in progress": <ProgressIcon />,
+	"finished": <FinishedIcon />,
+	"on pause": <PauseIcon />,
+    }
 
-    const statusClass = statusColorMap[item.status.name.toLowerCase()] || "text-white";
+    const status = statusSVGMap[item.status.name.toLowerCase()];
 
    return (
 	<a href={item.site} target="_blank" className="project">
 	    <div className="project-header">
 		<h4 className="subheading">{item.displayName}</h4>
-		<h5 className={`font-bold ${statusClass}`}>{item.status.name.toUpperCase()} - {item.status.progress}%</h5>
+		<h5 className="progress">{status}<progress value={item.status.progress} max="100">{item.status.progress}</progress>{item.status.progress}%</h5>
 	    </div>
 	    <div className="project-content">
 		<img src={`/previews/${item.name.toLowerCase().replace(/\s/g, "")}.webp`} alt={`${item.displayName} preview`} className="m-auto" />

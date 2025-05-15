@@ -271,6 +271,10 @@ main {
     align-items: center;
 }
 
+.project-header h5 {
+    color: var(--subheading);
+}
+
 @media (max-width: 768px) {
     .project-header {
 	flex-direction: column;
@@ -286,6 +290,25 @@ main {
     scale: 101%;
     box-shadow: 0px 0px 30px 10px var(--card-glow);
     transition: 100ms ease;
+}
+
+progress {
+    height: 0.75rem;
+    appearance: none;
+}
+
+/* WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+    background-color: var(--body);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--subheading);
+}
+
+/* Firefox */
+progress::-moz-progress-bar {
+    background-color: var(--subheading);
 }
 
 .footer {
@@ -349,4 +372,10 @@ button:hover {
     gap: 2rem;
     margin: 1rem;
     justify-content: center;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
