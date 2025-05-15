@@ -1,39 +1,11 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
 .env
 
-# vercel
-.vercel
+client/eslint.config.js
+client/node_modules
+client/tsconfig.app.json
+client/tsconfig.json
+client/.env
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+server/node_modules
+server/tsconfig.json
+server/.env
