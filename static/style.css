@@ -1,0 +1,146 @@
+html {
+    margin: auto;
+    max-width: calc(1600px + 1.0vw)
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 0.625vw 0vw 0.625vw 0vw;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+.website-title-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25vw;
+    line-height: 0vw;
+    background-color: #e3fbff;
+    border: solid 0.075vw #b5c8cb;
+}
+
+.website-title {
+    font-family: Garamond, serif;
+    font-size: calc(14px + 0.5vw);
+    color: #414141;
+}
+
+.website-subtitle {
+    font-family: Garamond, serif;
+    font-size: calc(12px + 0.25vw);
+    color: #414141;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.625vw;
+    margin: 0.625vw;
+
+}
+
+.nav-button {
+    margin: 0.3125vw;
+    padding: 0.625vw;
+    font-family: Garamond, serif;
+    font-size: calc(12px + 0.25vw);
+    text-align: center;
+    text-decoration: none;
+    border: solid 0.075vw #b5c8cb;
+    background-color: #e3fbff;
+}
+
+.nav-button:hover {
+    border: solid 0.075vw #b5bdcb;
+    background-color: #e3edff;
+    scale: 105%;
+}
+
+.nav-active {
+    border: solid 0.075vw #b5bdcb;
+    background-color: #e3edff;
+}
+
+main {
+    padding: 0.625vw;
+    margin: 0.625vw;
+}
+
+article {
+    padding: 1.25vw;
+    line-height: 150%;
+    background-color: #eeeeee;
+    border: solid 0.075vw #d0d0d0;
+}
+
+h1,h2 {
+    font-family: Garamond, serif;
+    color: #414141;
+}
+
+h1 {
+    font-family: Garamond, serif;
+    font-size: calc(12px + 0.5vw);
+}
+
+h2 {
+    font-family: Garamond, serif;
+    font-size: calc(12px + 0.25vw);
+}
+
+p {
+    font-family: Garamond, serif;
+    text-indent: 1.25vw;
+    color: #414141;
+}
+
+a {
+    font-family: Garamond, serif;
+    color: #414141;
+}
+
+hr {
+    width: 100%;
+    border-top: 0.075vw dotted #414141;
+    border-bottom: 0vw;
+}
+
+h3.dev-log-title {
+    font-family: Garamond, serif;
+    font-size: calc(12px + 0.25vw);
+    margin: 0.156vw;
+    color: #414141;
+}
+
+div.dev-log-container {
+    margin: 0.625vw;
+    padding: 0.625vw;
+    min-width: calc(200px + 1vw);
+    max-height: 20vw;
+    overflow-y: auto;
+}
+
+.dev-log-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev-log-entry {
+    display: flex;
+    flex-direction: column;
+    padding: 0.325vw;
+    margin: 0.325vw 0vw 0.325vw 0vw;
+    background-color: #fff5e3;
+    border: solid 0.075vw #cbc3b5;
+}
+
+.blog-ul {
+    list-style-type: none;
+}
